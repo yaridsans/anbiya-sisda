@@ -1,0 +1,84 @@
+h1 {
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.grid-item {
+  padding: 100px;
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+}
+.grid-item p {
+  font-size: 20px;
+  margin: 0;
+  position: absolute;
+  color: white;
+  font-weight: bold;
+}
+.grid-item video {
+  max-height: 300px;
+  max-width: 100%;
+  box-shadow: -2px -2px 15px #888888;
+}
+.grid-item .kick_btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#localVideo-container {
+  height: 250px;
+  position: absolute;
+  bottom: 200px;
+  right: 430px;
+  box-shadow: -2px -2px 15px #888888;
+}
+
+#localVideo-container video {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgNCgcHDQgICAcICAoHBwcHBw8ICQcKFREWFhURExMYHSggGBolGxMfITEhJSkrLi4uFx8zODMsNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAPAAqgMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAAAAQIH/8QAIxABAQABAwQDAQEBAAAAAAAAAAERIVFhMUGBsXGRofDBEv/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDkEplnHdZeoKeTRNNewLk511THRPILS5S5UEUiAewAWZJUm6+AEixAUyns3BdSkL4ATTaLon/M3oLv8rrwZS9wXLOFTIHiHgwTAEq5EuAWGUnc5BYF/UoKRMkBSIoIGxgFXdEBVykXMBDdMraCZAgLnoigJoclPYKZTwS9gWbpdiTwAqFLkCdoeVQDghsAqQ4ICqzwuQSfBfBtACYWp9gKhfkAux5NjAHBDQgGm68pF/QT2Z7dg/AKGOTH0BCAAEpAI2xN1zQQwFA1J7NzkC40J23JUwC8Kl3AAvalAhknY4AyeVT8A21C+AD9VJAD0s9ItBGsRmY0X+6AhSm4Bk8gHKLakBdvQAFJuEvIEDB4ASLADgsDIKhKoCBJ0AvZc8jP2C3IU9gKmTHkCJj6F9geCAABQBUoBT0AcYKAKkPBiAYF2TPAH61isyrn+wCX4DBoB/h+gCZVKQCWrkAMgUCX7EhngFDIAYgadACBngFzEoUBcXhDIH2kXUsAtiZWwBm9l9lPVAJTBZ1A2SKbAvCEXUAmdtSAL9JqZ7gG4W9dDFAx9GBLsBueZ9r+HgCmPqFNcAabnoAMcpP1ZjyAhp1U3gJcJIuITsBFhIunXsCJhaW9APw9khnoCKmFgGQgBQTIKL7TPQCdr3LABL2JkwApfhNi0CkL8gGL4WHszdwL4AsAAAJgvweAJCQhQTX5MKmaDSZgl+QW9tAhQBL8EAE1UEsWUqYoLKeU/VBcmQBFMG4JKtCQA8kpb0ArOJs1YmOKCwJ/gBErTAFvQ9rU9AohqC0uAAkUgBmEKeQLkhwAHkACzsGQVnzF32NNgJj8NOqTstvUDgM9igzky0zAVZInszQLexkzwsx0BIunQlJ9AZRTAHgCTsBdzQ0MAY6AuAKxjlu51ZxQWFhLpgoJUahjgElJC4AMKIAHtZQJ+k73uSEnwB9lWxIBJNNi9li2AzCQwsgGC7rIAknVnHNbsTQH/9k=);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#controls {
+  text-align: center;
+  margin-top: 430px; /* Optional: Add some space above the buttons */
+}
+
+#joinBtn,
+#leaveBtn {
+  display: inline-block; /* Make buttons inline-block */
+}
+
+#roomId {
+  display: block; /* Memastikan elemen memiliki lebar penuh */
+  margin: 0 auto; /* Menengahkan elemen secara horizontal */
+  width: 200px; /* Atur lebar sesuai kebutuhan */
+  background-color: blueviolet;
+}
+
+label {
+  display: block; /* Memastikan elemen memiliki lebar penuh */
+  text-align: center; /* Menengahkan teks secara horizontal */
+  margin-bottom: 50px; /* Optional: Menambahkan jarak antara label dan input */
+  color: blue;
+}
