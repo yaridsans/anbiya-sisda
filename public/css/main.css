@@ -9,7 +9,7 @@ h1 {
 }
 .grid-item {
   height: 250px;
-  position: absolute;
+  position: relative;
   bottom: 200px;
   right: 660px;
   box-shadow: -2px -2px 15px #888888;
