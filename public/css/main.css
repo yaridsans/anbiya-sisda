@@ -10,8 +10,8 @@ h1 {
 .grid-item {
   height: 100px;
   position: absolute;
-  bottom: 100px;
-  right: 230px;
+  bottom: 400px;
+  right: 630px;
   box-shadow: -2px -2px 15px #888888;
   /* border: 1px solid rgba(0, 0, 0, 0.8); */
 }
